@@ -55,6 +55,22 @@
             border: 1px solid #ccc;
             min-height: 50px;
         }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer a {
+            color: #4CAF50; /* Matches the button color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -70,8 +86,15 @@
         <button onclick="convertToRandomCase()">Random Case</button>
 
         <div id="result"></div>
+
+        <!-- Legalese Section moved inside the container -->
+        <footer>
+            <p>© 2024 Your Name. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+            <p>Disclaimer: This website provides tools for text case conversion. We are not liable for any misuse of the information provided.</p>
+        </footer>
     </div>
 
-    <script src="converter.js"></script> <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
